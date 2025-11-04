@@ -8,15 +8,28 @@ StackTags lets you control item stack sizes using data packs. Place items into o
 - Values are clamped to 64.
 
 ## How to use
-Add your items to the desired tag(s) via a data pack or resource pack:
+Add your items to the desired tag(s) via a data pack:
 
 ```
 data/stacktags/tags/items/stackable_to_16.json
 {
   "replace": false,
   "values": [
-    "minecraft:ender_pearl",
-    "minecraft:bucket"
+    "minecraft:lava_bucket",
+    "minecraft:water_bucket"
+  ]
+}
+```
+
+Or replace the default behaviour of the mod to set up your custom max stack sizes:
+
+```
+data/stacktags/tags/items/stackable_to_16.json
+{
+  "replace": true,
+  "values": [
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple"
   ]
 }
 ```
@@ -25,7 +38,7 @@ You can create similar files for `stackable_to_1`, `2`, `4`, `8`, `32`, and `64`
 
 ## Compatibility
 - Loader: Fabric, Quilt, Forge (Architectury)
-- Minecraft: 1.20.1 (template target)
+- Minecraft: 1.20.1
 
 ## License
 This project is licensed under the license specified in `LICENSE`.
