@@ -6,10 +6,10 @@
   "description": "Adds item tags that set exact max stack sizes (1, 2, 4, 8, 16, 32, 64). Items in these tags will stack to the specified size across all supported loaders.",
   "authors": ["linkedto"],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/linked3/",
+    "sources": "https://github.com/linked3/StackTags"
   },
-  "license": "Insert License Here",
+  "license": "GPL-3.0-or-later",
   "icon": "assets/stacktags/icon.png",
   "environment": "*",
   "entrypoints": {

@@ -9,10 +9,11 @@
     "metadata": {
       "name": "StackTags",
       "description": "Adds item tags that set exact max stack sizes (1, 2, 4, 8, 16, 32, 64). Items in these tags will stack to the specified size across all supported loaders.",
-      "license": "CC0-1.0",
-      "authors": ["Me!"],
+      "license": "GPL-3.0-or-later",
+      "icon": "assets/stacktags/icon.png",
+      "authors": ["linkedto"],
       "contact": {
-        "sources": "https://github.com/architectury/architectury-templates"
+        "sources": "https://github.com/linked3/StackTags"
       }
     },
     "group": "${group}",

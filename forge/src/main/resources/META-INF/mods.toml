@@ -1,23 +1,23 @@
 modLoader = "kotlinforforge"
 loaderVersion = "[4,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "GNU General Public License v3.0"
 
 [[mods]]
 modId = "${mod_id}"
 version = "${version}"
 displayName = "StackTags"
-authors = "Me!"
+authors = "linkedto"
 description = '''
 Adds item tags that set exact max stack sizes (1, 2, 4, 8, 16, 32, 64).
 Items in these tags will stack to the specified size across all supported loaders.
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.${mod_id}]]
 modId = "forge"
 mandatory = true
-versionRange = "[43,)"
+versionRange = "[47,)"
 ordering = "NONE"
 side = "BOTH"
 
@@ -38,6 +38,6 @@ side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "kotlinforforge"
 mandatory = true
-versionRange = "[${kotlin_for_forge_version}]"
+versionRange = "[${kotlin_for_forge_version},)"
 ordering = "AFTER"
 side = "BOTH"
