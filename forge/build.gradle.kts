@@ -45,9 +45,8 @@ dependencies {
     common(project(":common", "namedElements")) { isTransitive = false }
     shadowCommon(project(":common", "transformProductionForge")) { isTransitive = false }
 
-    // Kotlin For Forge - supports newer versions >= minimum version
-    val kotlinForForgeVersion = rootProject.property("kotlin_for_forge_version").toString()
-    implementation("thedarkcolour:kotlinforforge:[${kotlinForForgeVersion},)")
+    // Kotlin For Forge
+    implementation("thedarkcolour:kotlinforforge:${rootProject.property("kotlin_for_forge_version")}")
 }
 
 tasks.processResources {

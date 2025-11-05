@@ -46,9 +46,8 @@ dependencies {
         isTransitive = false
     }
 
-    // Fabric Kotlin - supports newer versions >= minimum version
-    val fabricKotlinVersion = rootProject.property("fabric_kotlin_version").toString()
-    modImplementation("net.fabricmc:fabric-language-kotlin:[${fabricKotlinVersion},)")
+    // Fabric Kotlin
+    modImplementation("net.fabricmc:fabric-language-kotlin:${rootProject.property("fabric_kotlin_version")}")
 }
 
 tasks.processResources {
