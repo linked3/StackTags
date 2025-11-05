@@ -51,7 +51,9 @@ dependencies {
         isTransitive = false
     }
 
-    modApi("org.quiltmc.quilt-kotlin-libraries:quilt-kotlin-libraries:${rootProject.property("quilt_kotlin_libraries_version")}")
+    // Quilt Kotlin Libraries - supports newer versions >= minimum version
+    val quiltKotlinLibrariesVersion = rootProject.property("quilt_kotlin_libraries_version").toString()
+    modApi("org.quiltmc.quilt-kotlin-libraries:quilt-kotlin-libraries:[${quiltKotlinLibrariesVersion},)")
 }
 
 tasks.processResources {
